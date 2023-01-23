@@ -54,7 +54,7 @@ starField.position.setZ(100);
 
 
 // Avatar
-const now9Texture = new THREE.TextureLoader().load('now9.jpg');
+const now9Texture = new THREE.TextureLoader().load('https://raw.githubusercontent.com/nown1ne/resume/master/now9.jpg');
 const now9 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: now9Texture }));
 
 scene.add(now9);
