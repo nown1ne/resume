@@ -18,8 +18,8 @@ camera.position.setX(-3);
 renderer.render(scene, camera);
 
 // Earth
-const earthTexture = new THREE.TextureLoader().load('earth.jpg');
-const earth_normalTexture = new THREE.TextureLoader().load('earth.jpg');
+const earthTexture = new THREE.TextureLoader().load('./earth.jpg');
+const earth_normalTexture = new THREE.TextureLoader().load('./earth.jpg');
 
 const geometry = new THREE.SphereGeometry(15, 32, 16);
 const material = new THREE.MeshStandardMaterial({
@@ -42,7 +42,7 @@ scene.add(pointLight, ambientLight);
 
 // Stars
 const starGeometry = new THREE.SphereGeometry(1000, 50, 50);
-const starTexture = new THREE.TextureLoader().load('galaxy_starfield.png');
+const starTexture = new THREE.TextureLoader().load('./galaxy_starfield.png');
 const starMaterial = new THREE.MeshPhongMaterial({
   map: starTexture,
   side: THREE.DoubleSide,
@@ -54,15 +54,15 @@ starField.position.setZ(100);
 
 
 // Avatar
-const now9Texture = new THREE.TextureLoader().load('now9.jpg');
+const now9Texture = new THREE.TextureLoader().load('./now9.jpg');
 const now9 = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: now9Texture }));
 
 scene.add(now9);
 
 
 // Moon
-const moonTexture = new THREE.TextureLoader().load('moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpg');
+const moonTexture = new THREE.TextureLoader().load('./moon.jpg');
+const normalTexture = new THREE.TextureLoader().load('./normal.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
