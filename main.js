@@ -91,7 +91,7 @@ function moveCamera() {
   now9.rotation.y += 0.01;
   now9.rotation.z += 0.01;
 
-  camera.position.z = t * -0.008;
+  camera.position.z = t * -0.001;
   camera.position.x = t * -0.0009;
   camera.rotation.y = t * -0.0002;
 }
