@@ -65,6 +65,7 @@ canvas {
 
 
   header {
+    color:white;
     background: var(--dark-bg);
     grid-column: 2 / span 5;
     font-size: 2.5rem;
@@ -89,8 +90,8 @@ canvas {
   }
 
   blockquote p {
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: black;
     font-size: 4rem;
     display: inline;
     line-height: 1;
