@@ -88,6 +88,15 @@ moon.position.setX(-20);
 now9.position.z = -5;
 now9.position.x = 2;
 
+window.onscroll = function(e) {
+  if(this.oldScroll < this.scrollY){revcamera}
+  this.oldScroll = this.scrollY;
+}
+
+function revcamera() {
+   now9.rotation.y -= 0.01;
+  now9.rotation.z -= 0.01;
+}
 
 // Camera
 function moveCamera() {
