@@ -86,18 +86,9 @@ moon.position.z = 30;
 moon.position.setX(-20);
 
 now9.position.z = -5;
-now9.position.x = 2;
+now9.position.x = 0;
 
-window.onscroll = function(e) {
-  if(this.oldScroll < this.scrollY){revcamera();}
-  else movecamera();
-  this.oldScroll = this.scrollY;
-}
 
-function revcamera() {
-   now9.rotation.y -= 0.01;
-  now9.rotation.z -= 0.01;
-}
 
 // Camera
 function moveCamera() {
@@ -114,7 +105,8 @@ function moveCamera() {
   camera.rotation.y = t * -0.0002;
 }
 
-
+document.body.onscroll = moveCamera;
+moveCamera();
 
 // Loop
 function animate() {
