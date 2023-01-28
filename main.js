@@ -85,8 +85,8 @@ scene.add(moon);
 moon.position.z = 30;
 moon.position.setX(-20);
 
-now9.position.z = -5;
-now9.position.x = 0;
+now9.position.z = -4;
+now9.position.x = 2;
 
 
 
