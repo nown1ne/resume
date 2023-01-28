@@ -33,6 +33,14 @@ scene.add(earth);
 earth.rotation.x += .2;
 earth.rotation.z += -.1;
 
+new THREE.Mesh(
+  new THREE.SphereGeometry(15.503, 32, 32),
+  new THREE.MeshPhongMaterial({
+    map: THREE.ImageUtils.loadTexture('./clouds.jpg'),
+    transparent: true
+  })
+);
+
 // Lights
 const pointLight = new THREE.PointLight(0xffffff);
 pointLight.position.set(5, 5, 5);
