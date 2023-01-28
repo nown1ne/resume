@@ -89,7 +89,8 @@ now9.position.z = -5;
 now9.position.x = 2;
 
 window.onscroll = function(e) {
-  if(this.oldScroll < this.scrollY){revcamera}
+  if(this.oldScroll < this.scrollY){revcamera();}
+  else movecamera();
   this.oldScroll = this.scrollY;
 }
 
@@ -113,8 +114,7 @@ function moveCamera() {
   camera.rotation.y = t * -0.0002;
 }
 
-document.body.onscroll = moveCamera;
-moveCamera();
+
 
 // Loop
 function animate() {
