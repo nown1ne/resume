@@ -21,7 +21,9 @@ canvas {
     justify-content: center;
   }
   .mobile{
+    padding:1em;
     margin-top: 40%;
+    width:90%;
     color: white;
     text-align: center;
   }
